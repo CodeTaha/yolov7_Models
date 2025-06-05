@@ -1,0 +1,9 @@
+train: data/tumor_dataset/images/train
+val: data/tumor_dataset/images/val
+test: data/tumor_dataset/images/test
+
+# number of classes
+nc: 4
+
+# class names
+names: [ 'Glioma', 'Meningioma', 'No Tumor', 'Pituitary' ]

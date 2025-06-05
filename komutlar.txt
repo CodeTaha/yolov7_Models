@@ -1,0 +1,11 @@
+python detect.py --weights yolov7.pt --source inference\images\image3.jpg
+
+python detect.py --weights yolov7.pt --conf-thres 0.5 --img-size 640 --source inference\images --view-img --save-txt
+
+python detect.py --weights yolov7.pt --conf-thres 0.5 --img-size 640 --source 0
+
+************************* Eğitim *************************
+
+python train.py --workers 0 --batch-size 4 --device 0 --data data\smoker.yaml --img 640 640 --cfg cfg\training\yolov7-smoker.yaml --weights yolov7_training.pt --name yolov7-smoker --hyp data\hyp.scratch.custom.yaml --epochs 300
+
+python train.py --workers 0 --batch-size 4 --device 0 --data data\tumor.yaml --img 640 640 --cfg cfg\training\yolov7-tumor.yaml --weights yolov7_training.pt --name yolov7-tumor --hyp data\hyp.scratch.custom.yaml --epochs 300

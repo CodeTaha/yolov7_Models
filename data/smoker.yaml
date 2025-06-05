@@ -1,0 +1,9 @@
+train: data/smoker_dataset/images/train
+val: data/smoker_dataset/images/val
+test: data/smoker_dataset/images/test
+
+# number of classes
+nc: 2
+
+# class names
+names: [ 'Insan', 'Sigara' ]
